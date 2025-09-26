@@ -54,6 +54,111 @@ hr{
 
 
 
+section article{
+
+   width: 49%;
+   
+
+
+
+}
+
+
+section article:nth-child(1){
+
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid red;
+    height: 415px;
+    
+
+
+}
+
+section article article {
+
+    margin-top: 20px;
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid red;
+    width: 48%;
+    margin-right: 6px;
+    
+   
+    
+
+}
+
+section article article img {
+
+    width: 100%;
+
+    
+
+}
+
+
+
+section article:nth-child(2){
+
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 12px;
+    border: 1px solid rgb(81, 0, 255);
+    height: 415px;
+}
+
+#bike{
+
+   width: 67%;
+    margin-left: 10px;
+  border: #00ff08 2px solid;
+
+}
+
+#years{
+
+   position: relative;
+   width: 20%;
+   left: -350px;
+   top: -20px;
+
+
+}
+
+
+
+
+footer{
+
+    border: #00ff08 2px solid;
+    padding: 0px;
+   
+}
+
+footer article{
+
+    display: inline-block;
+    margin-right: 45px;
+    vertical-align: top;
+    width: 150px;
+    color: var(--color--gris);
+    margin-top: 30px;
+
+    border: 1px solid red;
+
+
+    
+}
+footer article ul{
+
+    list-style: none;
+    padding: 0px;
+    color: var(--color--gris);
+}
+
+
+
 #go_to_shop{
 
   position: relative;
@@ -72,3 +177,22 @@ hr{
   width: 40px;
 
 }
+
+.letra-grande{
+
+    font-size: 50px;
+    
+}
+.letra-verde{
+
+    color: var(--color--verde);
+
+}
+
+.nito{
+
+    font-weight: bold;
+
+
+}
+
