@@ -1,0 +1,74 @@
+html{
+
+    --color--verde:#00ff08;
+    --color--gris:gray;
+
+}
+
+body{
+
+    font-size: 16px;
+    font-family: sans-serif;
+    max-width: 1024px;
+    margin: 0px auto;
+
+}
+header article{
+    
+    display: inline-block;
+    margin-left: 600px;
+
+}
+
+header article img{
+
+    width: 40px;
+    margin-right: 10px;
+    
+
+}
+
+
+header nav ul{
+
+    list-style: none;
+    padding: 0px;
+
+}
+
+header nav ul li{
+
+    display: inline-block;
+    margin-right: 20px;
+    font-weight: bold;
+    
+
+}
+
+hr{
+
+    border-style: dashed;
+    color:var(--color--gris) ;
+
+}
+
+
+
+#go_to_shop{
+
+  position: relative;
+  left: 700px;
+  top: 20px;
+  width: 140px;
+  
+
+}
+
+#buy{
+
+  position: relative;
+  left: 500px;
+  top: 50px;
+  width: 40px;
+
+}
