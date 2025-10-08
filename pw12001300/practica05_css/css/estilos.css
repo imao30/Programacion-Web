@@ -115,7 +115,11 @@ body{
 
 .panels{
 
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(3,minmax(140px,1fr));
     text-align: center;
+    
     
 
 }
@@ -145,7 +149,18 @@ body{
     background: rgb(235,204,208);
 }
 
+.panels article:nth-child(1){
 
+    border: 1px solid rgb(188,231,240);
+}
+
+.panels article:nth-child(2){
+    border: 1px solid rgb(250,234,203);
+}
+
+.panels article:nth-child(3){
+    border: 1px solid rgb(235,204,208);
+}
 .principaltitulos{
 
     color: rgb(174,174,174);
@@ -184,5 +199,28 @@ body{
 
     width: 30px;
     vertical-align: middle;
+
+}
+
+.usuarios{
+
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+}
+
+.usuarios article{
+    background: rgb(74,106,174);
+    color: white;
+    padding: 10px;
+    vertical-align: top;
+}
+
+.usuarios input{
+
+    background: green;
+    color: white;
+    border-radius: 5px;
 
 }
