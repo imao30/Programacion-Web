@@ -8,6 +8,18 @@ body{
 
 }
 
+.Contenedor{
+
+    display: grid;
+    grid-template:
+    "header header"
+    "navbar navbar"
+    "links principal"
+    "lprogress principal"
+    ;
+
+}
+
 .cubes{
 
     display: grid;
@@ -61,7 +73,8 @@ body{
     background-color: rgb(35, 93, 146);
     padding: 10px 0px;
     text-align: center;
-
+    font-size: 0.6em;
+    grid-area: header;
 
 }
 .header img{
@@ -74,6 +87,7 @@ body{
     background: rgb(239, 239, 239);
     text-align: right;
     padding: 10px 5px;
+    grid-area: navbar;
 
 }
 
@@ -90,6 +104,8 @@ body{
     color: white;
     font-size: 0.6em;
     width: 150px;
+    margin-right: 10px;
+    grid-area: links;
 
 }
 
@@ -168,20 +184,29 @@ body{
 
 }
 
+.panels img{
+
+    width: 100%;
+
+}
+
 .progress{
 
     background: rgb(239, 239, 239);
     color: black;
     font-size: 0.6em;
-    margin-top: 10px;
+    margin-top: 20px;
     text-align: left;
-    
+    color: gray;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    grid-area: lprogress;
 
 }
 
 .progressbarra{
 
-    padding-left: 10px;
+    width: 100%;
 
 }
 
@@ -190,23 +215,33 @@ body{
     background: rgb(35,92,146);
     color: white;
     margin: 0px;
-    padding: 5px;
+    padding: 5px 0px;
     width: 100%;
 
 }
 
 .progress h4 img{
 
-    width: 30px;
+    width: 15px;
     vertical-align: middle;
 
 }
+
+.principal{
+
+    background: white;
+    grid-area: principal;
+    padding: 5px;
+
+}
+
 
 .usuarios{
 
     text-align: center;
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    gap: 15px;
 
 }
 
@@ -219,8 +254,15 @@ body{
 
 .usuarios input{
 
-    background: green;
+    background: rgb(01,190,224);
+    border: 1px solid rgb(01,190,224);
     color: white;
     border-radius: 5px;
+
+}
+
+.usuarios img{
+
+    width: 100%;
 
 }
