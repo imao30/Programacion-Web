@@ -1,0 +1,20 @@
+.contenedor{
+
+    background: khaki;
+    border: 1px solid black;
+    height: 400px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+}
+
+.box{
+
+    border: 3px solid black;
+    font-size: 30px;
+    margin: 15px;
+    width: 1000px;
+
+}
