@@ -1,0 +1,237 @@
+html{
+    --color-azul:rgb(75,95,213);
+    --color-blanco:white;
+    --color-enlace:rgb(162,156,231);
+    --fondo-ayuda:rgb(218,219,241);
+    --color-negro:black;
+
+}
+
+body{
+
+    font-size: 16px;
+    font-family: sans-serif;
+    margin: 0px auto;
+
+}
+
+.header{
+    background: var(--color-negro);
+    color: var(--color-blanco);
+    padding: 10px,0px; 
+    display: grid;
+    grid-template:
+    "imagen . inputs";
+
+    
+}
+.header img{
+    width: 40px;
+    vertical-align: middle;
+    margin-left: 50px;
+
+}
+
+.header article:nth-child(1){
+
+    grid-area: imagen;
+}
+.header article:nth-child(2){
+
+    grid-area: inputs;
+    margin-left: 1100px;
+    
+}
+
+.header input{
+    
+    height:30px;
+}
+
+.header input[type="submit"]{
+    background: var(--color-negro);
+    border: 1px solid var(--color-blanco);
+    border-radius: 5px;
+    color: var(--color-blanco);
+    padding: 5px,10px;
+
+}
+
+.header input[type="button"]{
+
+    background: var(--color-azul);
+    border-radius: 5px;
+    border: 1px solid var(--color-azul);
+    color: var(--color-blanco);
+    padding: 5px 10px;
+    margin-right: 50px;
+
+}
+
+.help{
+    background: var(--fondo-ayuda);
+    display: grid;
+    height: 400px;
+    grid-template:
+    ". . ."
+    ". HelpText ."
+    ". . .";
+
+}
+
+.help article{
+    height: 100px;
+    font-size: 80px;
+    text-align: center;
+    grid-area: HelpText;
+}
+
+.help article input[type="search"]{
+
+    width: 800px;
+    border-radius: 3px;
+    border: 1px solid var(--color-negro);
+    height: 50px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    
+}
+
+.main{
+
+    display: grid;
+    grid-template:
+    "Branches Manage_Account"
+    "Manage_Organizations Manage_Billing"
+    "Authenticate Abstract";
+    gap: 50px;
+    padding-top: 100px;
+}
+
+.main >article{
+
+    
+    margin-left: 150px;
+}
+
+.main > article > *{
+
+    display: inline-block;
+
+}
+
+.main > article>:first-child{
+
+
+    vertical-align: top;
+
+}
+
+.main >article:nth-child(1){
+
+    grid-area:Branches;
+
+}
+
+
+.main >article:nth-child(2){
+
+    grid-area:Manage_Account;
+    
+
+}
+.main >article:nth-child(3){
+
+    grid-area:Manage_Organizations;
+
+}
+.main >article:nth-child(4){
+
+    grid-area:Manage_Billing;
+
+}
+.main >article:nth-child(5){
+
+    grid-area:Authenticate;
+
+}
+.main >article:nth-child(6){
+
+    grid-area:Abstract;
+
+}
+
+.main img{
+
+    width: 50px;
+    margin-right: 10px;
+}
+
+.main-titulo{
+
+    font-weight: bold;
+
+}
+.main-link{
+
+    color: var(--color-enlace);
+
+}
+
+.footer{
+
+    background: var(--color-negro);
+    color: var(--color-blanco);
+    display: grid;
+    height: 250px;
+    margin-top: 40px;
+    grid-template:
+    "Abstract_1 Resources Community Company logo" ;
+    
+
+}
+.footer article{
+    padding: 20px 0px;
+
+}
+
+.footer>article{
+
+    padding-left: 100px ;
+}
+
+.footer article:nth-child(1){
+
+    grid-area:Abstract_1;
+
+}
+
+.footer article:nth-child(2){
+
+    grid-area:Resources;
+
+}
+.footer article:nth-child(3){
+
+    grid-area:Community;
+
+}
+.footer article:nth-child(4){
+
+    grid-area:Company;
+
+}
+.footer article:nth-child(5){
+
+    grid-area:logo;
+    margin-top: 100px;
+
+}
+
+.footer img{
+    width: 40px;
+}
+.copy-info article{
+
+    margin-top: -20px;
+
+}
