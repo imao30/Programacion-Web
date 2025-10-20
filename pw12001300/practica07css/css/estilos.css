@@ -10,7 +10,16 @@ body{
 
 }
 
+footer{
+    position: fixed;
+    border-top: 1px solid #CCC;
+    bottom: 0px;
+    left: auto;
+    padding: 5px 0px;
+    text-align: center;
+    width: 100%;
 
+}
 
 header{
 
@@ -45,6 +54,13 @@ header ul li:hover{
 
 }
 
+.columna{
+
+    flex: 25%;
+    max-width: 25%;
+
+}
+
 .contenedor{
     display: grid;
     grid-template-areas:
@@ -55,7 +71,7 @@ header ul li:hover{
     /* background: brown; */
     grid-area: fotos;
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     padding: 0px 4px;
 
 }
@@ -89,4 +105,47 @@ header ul li:hover{
 .sidebar ul li:hover{
     border-left: 5px solid var(--color-azul);
     color: var(--color-azul);
+}
+
+@media only screen and (width <= 700px){
+
+    .contenedor{
+        grid-template-areas:
+        "header"
+        "sidebar"
+        "fotos";
+    }
+
+    .sidebar ul{
+        flex-flow: row wrap;
+        justify-content: center;
+
+    }
+    .sidebar ul li {
+        width: auto;
+       
+    }
+
+    .sidebar ul li:hover{
+
+        border: none;
+        border-bottom: 5px solid var(--color-azul);
+
+    }
+
+    .columna{
+
+        flex: 100%;
+        max-width: 100%;
+
+    }
+
+    header{
+
+        justify-content: center;
+
+    }
+     
+
+
 }

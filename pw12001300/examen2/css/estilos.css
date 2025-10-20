@@ -10,7 +10,6 @@ html{
 }
 
 body{
-
     font-size: 16px;
     font-family: sans-serif;
     margin: 0px auto;
@@ -25,7 +24,6 @@ body{
     align-items: center;
     padding: 50px 20px;
     grid-area:barra-izquierda;
-    
 
 }
 
@@ -50,7 +48,6 @@ body{
     flex-direction: column;
     color: var(--color-texto-izquierda);
     font-weight: bold;
-    
 
 }
 
@@ -177,7 +174,6 @@ header{
 
 }
 
-
 .navbar ul{
 
     display: flex;
@@ -186,7 +182,6 @@ header{
     justify-content: flex-start;
     padding-left: 0%;
     
-
 }
 
 .navbar ul li{
@@ -208,7 +203,6 @@ header{
     border: 1px solid var(--color-nav);
 
 }
-
 
 .nito{
 
