@@ -59,3 +59,32 @@ usuarios({
   autoriza: true,
   ip: "192.168.1.4",
 });
+
+//Tipos que solo existen en TS
+
+let tiempo: number = 76_000_000;
+let animal: string = "diinosaurio";
+let extinto: boolean = true;
+
+//Tipo Any
+let mivariable;
+mivariable = "cadena";
+mivariable = 42;
+
+let animales: string[] = ["perro", "gato", "caballo"];
+let numeros1: number[] = [1, 2, 3, 4, 5, 6, 7];
+let atributos: boolean[] = [];
+let numeros2: Array<number> = []; // se usa mucho en TS
+
+//animales.map(x=>x.)
+
+//tuplas no usar
+let tupla: [number, string] = [1, "cadena"];
+tupla.push(2);
+let tupla1: [number, string[]] = [1, ["cadena", "cadena2", "cadena3"]];
+
+//Enums
+
+const chica = "s";
+const mediana = "m";
+const grande = "l";
