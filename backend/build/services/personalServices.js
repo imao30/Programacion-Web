@@ -1,10 +1,11 @@
-import mysql from 'mysql2/promise';
-import {} from '../typesPersonal.js';
+import mysql from "mysql2/promise";
+import {} from "../typesPersonal.js";
+import { personalSchema } from "../schema/personal.Schema.js";
 const conexion = mysql.createPool({
-    host: 'localhost',
-    user: 'root',
+    host: "localhost",
+    user: "root",
     password: "",
-    database: 'pw12001200',
+    database: "pw12001300",
 });
 export const obtienePersonal = async () => {
     try {
@@ -28,6 +29,10 @@ export const encuentraPersonal = async (id) => {
 };
 export const agregarPersonal = async (nuevo) => {
     try {
+        const validacion = personalSchema.safeParse(nuevo);
+        if (!validacion.success) {
+            return { error: "Error de validacion:", detalles: validacion.error };
+        }
         const [results] = await conexion.query("INSERT INTO personal(nombre,direccion,telefono,estatus) VALUES(?,?,?,?)", [nuevo.nombre, nuevo.direccion, nuevo.telefono, nuevo.estatus]);
         return results;
     }
@@ -37,7 +42,13 @@ export const agregarPersonal = async (nuevo) => {
 };
 export const modificarPersonal = async (modificado) => {
     try {
-        const [results] = await conexion.query("UPDATE personal SET nombre=?,direccion=?,telefono=?,estatus=? WHERE id = ?", [modificado.nombre, modificado.direccion, modificado.telefono, modificado.estatus, modificado.id]);
+        const [results] = await conexion.query("UPDATE personal SET nombre=?,direccion=?,telefono=?,estatus=? WHERE id = ?", [
+            modificado.nombre,
+            modificado.direccion,
+            modificado.telefono,
+            modificado.estatus,
+            modificado.id,
+        ]);
         return results;
     }
     catch (error) {
